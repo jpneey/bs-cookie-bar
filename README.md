@@ -1,2 +1,2 @@
-# bs-cookie-bar
-A wordpress plugin that adds a light weight cookie bar for bootstrap 5 powered themes. 
+# Bootstrap 5 Cookie Bar
+A ightweight wordpress plugin that adds a lcookie bar for bootstrap 5 powered themes. 
