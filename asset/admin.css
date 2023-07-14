@@ -1,0 +1,159 @@
+
+.jp-page {
+    position: relative;
+    width: calc( 100% + 30px);
+    left: -30px;
+}
+
+.jp-page * {
+    box-sizing: border-box;
+}
+
+.jp-page select {
+    max-width: none;
+}
+
+.jp-page header {
+    background: #fff;
+    width: 100%;
+    padding: 60px 30px 30px 30px;
+    border-bottom: 1px solid #dcdcde;
+}
+
+.jp-page main {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.jp-page .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% -30px);
+    max-width: 700px;
+}
+
+.jp-page .panel {
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #dcdcde;
+    margin-bottom: 30px;
+}
+
+.jp-page .panel-section {
+    margin-left: -30px;
+    margin-right: -30px;
+    padding: 15px 30px;
+    border-bottom: 1px solid #dcdcde;
+    margin-bottom: 20px;
+    background: #f5f5f5;
+}
+
+.jp-page .panel-section > :first-child,
+.jp-page .panel-section > :last-child {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.jp-page .panel-section:first-child {
+    margin-top: -30px;
+}
+
+.jp-page .panel-section.has-top {
+    border-top: 1px solid #dcdcde;
+    margin-top: 30px;
+}
+
+.jp-page .input {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #dcdcde;
+    padding: 4px 15px;
+}
+
+.jp-page label {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Hide unrelated notices */
+.notice, div.error, div.updated {
+    display: none;
+}
+
+.jp-notice {
+    display: block !important;
+    margin: 15px 0 !important;
+    padding: 10px 15px !important;
+    border-top-color: #dcdcde !important;
+    border-right-color: #dcdcde !important;
+    border-bottom-color: #dcdcde !important;
+}
+
+.spinner {
+    float: none;
+}
+
+.submitting .spinner {
+    visibility: visible;
+}
+
+@media screen and ( min-width: 769px ) {
+    .jp-row {
+        display: flex;
+        align-items: start;
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+
+    .jp-col {
+        width: 50%;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+.jp-preview {
+    position: relative;
+    background: #fff;
+    border: 1px solid #dcdcde;
+    padding-top: 56%;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.jp-preview .jp-bar {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    width: calc(100% - 30px);
+    height: 20%;
+    border-radius: 2px;
+    border: 1px solid #dcdcde;
+    background: #f5f5f5;
+    box-shadow: 0 0 0 999px rgba(0,0,0,0.1);
+}
+
+[data-preview="3"] .jp-bar,
+[data-preview="2"] .jp-bar {
+    width: 40%;
+}
+
+[data-preview="3"] .jp-bar {
+    left: auto;
+    right: 15px;
+}
+
+.jp-page h1 small {
+    font-size: 11px;
+}
+
+.jp-page .faq {
+    margin: 0 15px;
+    border-bottom: 1px solid #dcdcde;    
+}
