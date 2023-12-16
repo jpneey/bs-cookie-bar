@@ -114,6 +114,12 @@ class JpBSCookieBar_dashboard extends JpBSCookieBar {
             <p>Example: To override the main template, copy: <code>wp-content/plugins/bs-cookie-bar/template/cookie-bar.php</code> to <code>wp-content/themes/{yourtheme}/cookie-bar/cookie-bar.php</code></p>
             <p>The copied file will now override the default template file.</p>
             <div class="jp-notice notice warning">Warning: Do not edit these files within the core plugin itself as they are overwritten during the upgrade process and any customizations will be lost</div>
+            <h3>Filter Hooks</h3>
+            <ul>
+                <li><code>bs_jp_cookie_bar_html</code> - Filter the cookie bar text. Parameter <code>$html</code> - raw html text</li>
+                <li><code>bs_jp_cookie_bar_button</code> - Filter the cookie bar button(s). Parameter <code>$html</code> - raw html button(s)</li>
+            </ul>
+            
         </div>
         <?php
     }

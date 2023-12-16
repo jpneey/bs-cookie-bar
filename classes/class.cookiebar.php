@@ -104,12 +104,14 @@ class JpBSCookieBar {
     
     public function render_text()
     {
-        echo "<p>" . get_option( BS_JP_OPTION_TEXT, 'We use cookies to give you the best experience on our website. Cookies are files stored in your browser and are used by most websites to help personalise your web experience. By continuing to use our website, you are agreeing to our use of cookies.') . "</p>";
+        $html = "<p>" . get_option( BS_JP_OPTION_TEXT, 'We use cookies to give you the best experience on our website. Cookies are files stored in your browser and are used by most websites to help personalise your web experience. By continuing to use our website, you are agreeing to our use of cookies.') . "</p>";
+        echo apply_filters( "bs_jp_cookie_bar_html", $html );
     }
     
     public function render_button()
     {
-        echo sprintf('<a href="#bs-cookie-bar" id="bs-cookie-bar-button" class="button btn btn-primary">%s</a>', get_option( BS_JP_OPTION_BUTTON, 'Accept all'));
+        $html = sprintf('<a href="#bs-cookie-bar" id="bs-cookie-bar-button" class="button btn btn-primary">%s</a>', get_option( BS_JP_OPTION_BUTTON, 'Accept all'));
+        echo apply_filters( "bs_jp_cookie_bar_button", $html );
     }
     
     public function render_notices()
