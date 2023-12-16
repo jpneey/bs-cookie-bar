@@ -78,9 +78,7 @@ class JpBSCookieBar_dashboard extends JpBSCookieBar {
                     </div>
                 </div>
 
-                <div class="panel-section has-top">
-                    <h2>Appearance</h2>
-                </div>
+                <h3>Appearance</h3>
 
                 <div class="jp-row">
                     <div class="jp-col">
@@ -109,9 +107,9 @@ class JpBSCookieBar_dashboard extends JpBSCookieBar {
             <div class="panel-section">
                 <h2>Developers</h2>
             </div>
-            <h4 class="faq" style="margin: 0; padding-bottom: 8px;">Template List</h4>
+            <h3>Template List</h3>
             <p>Template files can be found within the <code>/bs-cookie-bar/template/</code> directory.</p>
-            <h4 class="faq" style="margin: 0; padding-bottom: 8px;">How to Edit Files</h4>
+            <h3>How to Edit Files</h3>
             <p>Edit files in an <b>upgrade-safe</b> way using <b>overrides</b>. Copy the template into a directory within your theme named <code>/cookie-bar</code> keeping the same file structure.</p>
             <p>Example: To override the main template, copy: <code>wp-content/plugins/bs-cookie-bar/template/cookie-bar.php</code> to <code>wp-content/themes/{yourtheme}/cookie-bar/cookie-bar.php</code></p>
             <p>The copied file will now override the default template file.</p>
