@@ -71,6 +71,7 @@ class JpBSCookieBar {
     
     public function frontend_enqueue()
     {
+        wp_enqueue_style( 'jp-bs-cookie-bar-main', BS_JP_URL . '/asset/bs.min.css', array(), BS_JP_COOKIE_V );
         wp_enqueue_script( 'jp-bs-cookie-bar-main', BS_JP_URL . '/asset/src.min.js', array( 'jquery' ), BS_JP_COOKIE_V, true );
     }
     

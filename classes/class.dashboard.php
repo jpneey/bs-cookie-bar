@@ -20,8 +20,7 @@ class JpBSCookieBar_dashboard extends JpBSCookieBar {
         <div class="jp-page">
             <header>
                 <div class="container">
-                    <h1>Bootstrap 5 Cookie bar <small>v <?php echo BS_JP_COOKIE_V ?></small></h1>
-                    <div class="notice jp-notice">This plugin is intended for <code>developers</code> and requires a theme that loads the <a href="https://getbootstrap.com/" target="_blank">bootstrap 5.x</a> library.</div>
+                    <h1>Cookie bar <small>v <?php echo BS_JP_COOKIE_V ?></small></h1>
                 </div>
             </header>
 
@@ -42,10 +41,10 @@ class JpBSCookieBar_dashboard extends JpBSCookieBar {
         ?>
         <div class="panel">
             <div class="panel-section">
-                <h2>Author Notes</h2>
+                <h2>Why?</h2>
             </div>
-            <p>Light and simple cookie bar for bootstrap 5.x powered themes. This plugin <b>does not</b> add any CSS and is <b>meant to be styled and extended per theme.</b></p>
-            <p>This uses default boostrap helper classes like <code>position-fixed</code> etc.. as a base and <b>~300 bytes</b> of javascript code.</p>
+            <p>If you just want to show a cookie bar without all other unnecessary functionality, then this plugin is for you - a light weight and developer friendly cookie bar!</p>
+            <p>This plugin only adds around <b>297 bytes</b> of javascript and <b>285 bytes</b> of CSS for a total of <b>~ 1 kb</b> ensuring faster loading times compared to other cookie bar plugins</p>
         </div>
         <?php
     }
@@ -55,7 +54,7 @@ class JpBSCookieBar_dashboard extends JpBSCookieBar {
         ?>
         <div class="panel">
             <div class="panel-section">
-                <h2>Configuration</h2>
+                <h2>Settings</h2>
             </div>
             <form action="<?php echo admin_url('admin-post.php') ?>" method="POST">
 

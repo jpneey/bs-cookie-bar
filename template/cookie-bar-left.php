@@ -1,12 +1,8 @@
-<section id="bs-cookie-bar" class="position-fixed bottom-0 start-0 col-12 col-md-4 col-xl-3 h-auto p-3 fixed-bottom" style="display: none; z-index: 9999999999;" >
-    <div class="cookie-bar-content position-relative overflow-hidden p-4 p-lg-5 bg-dark text-white">
-        <div class="row align-items-center">
-            <div class="col col-12">
-                <?php 
-                    do_action( 'bs_jp_cookie_text' );
-                    do_action( 'bs_jp_cookie_button' );
-                ?>
-            </div>
-        </div>
+<section id="bs-cookie-bar" class="bs-left" style="display: none; z-index: 9999999999;" >
+    <div class="bs-cookie-content">
+        <?php do_action( 'bs_jp_cookie_text' ) ?>
+    </div>
+    <div class="bs-cookie-buttons">
+        <?php do_action( 'bs_jp_cookie_button' ) ?>
     </div>
 </section>
