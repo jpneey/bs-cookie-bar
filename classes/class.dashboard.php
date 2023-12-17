@@ -8,10 +8,10 @@ class JpBSCookieBar_dashboard extends JpBSCookieBar {
         $this->init();
 
         add_action( 'jp_bs_admin_page', array( $this, 'render_page' ) );
-        add_action( 'jp_bs_panels', array( $this, 'panel_author_note' ), 11 );
         add_action( 'jp_bs_panels', array( $this, 'panel_appearance_form' ), 13 );
         add_action( 'jp_bs_panels', array( $this, 'panel_developers' ), 17 );
         add_action( 'admin_enqueue_scripts', array( $this, 'backend_enqueue' ) );
+        add_action( 'jp_bs_notices', array( $this, 'show_disabled_status' ) );
     }
 
     public function render_page()
@@ -20,7 +20,8 @@ class JpBSCookieBar_dashboard extends JpBSCookieBar {
         <div class="jp-page">
             <header>
                 <div class="container">
-                    <h1>Cookie bar <small>v <?php echo BS_JP_COOKIE_V ?></small></h1>
+                    <h1 style="margin-bottom: 0;">Cookie bar <small>v <?php echo BS_JP_COOKIE_V ?></small></h1>
+                    <p style="margin-top: 10px;">Light weight and developer extensible cookie bar widget.</p>
                 </div>
             </header>
 
@@ -36,17 +37,11 @@ class JpBSCookieBar_dashboard extends JpBSCookieBar {
         <?php
     }
 
-    public function panel_author_note()
+    public function show_disabled_status()
     {
-        ?>
-        <div class="panel">
-            <div class="panel-section">
-                <h2>Why?</h2>
-            </div>
-            <p>If you just want to show a cookie bar without all other unnecessary functionality, then this plugin is for you - a light weight and developer friendly cookie bar!</p>
-            <p>This plugin only adds around <b>297 bytes</b> of javascript and <b>285 bytes</b> of CSS for a total of <b>~ 1 kb</b> ensuring faster loading times compared to other cookie bar plugins</p>
-        </div>
-        <?php
+        if ( ! get_option( BS_JP_BAR_ACTIVE, false ) ) {
+            echo sprintf( '<div class="notices notice jp-notice %s">%s</div>', "error", "Cookie bar status is <code>Disabled</code>. Please enable it below." );
+        }
     }
 
     public function panel_appearance_form()
