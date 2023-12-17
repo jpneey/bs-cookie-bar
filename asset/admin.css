@@ -149,6 +149,15 @@
     right: 15px;
 }
 
+[data-preview="4"] .jp-bar {
+    bottom: auto;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 25%;
+    left: 50%;
+}
+
 .jp-page h1 small {
     font-size: 11px;
 }

@@ -89,6 +89,7 @@ class JpBSCookieBar_dashboard extends JpBSCookieBar {
                             <option value="1" <?php if ( get_option( BS_JP_OPTION_LAYOUT ) == 1 ) { echo 'selected'; } ?>>Full</option>
                             <option value="2" <?php if ( get_option( BS_JP_OPTION_LAYOUT ) == 2 ) { echo 'selected'; } ?>>Widget Left</option>
                             <option value="3" <?php if ( get_option( BS_JP_OPTION_LAYOUT ) == 3 ) { echo 'selected'; } ?>>Widget Right</option>
+                            <option value="4" <?php if ( get_option( BS_JP_OPTION_LAYOUT ) == 4 ) { echo 'selected'; } ?>>Center</option>
                         </select>
                     </div>
                 </div>

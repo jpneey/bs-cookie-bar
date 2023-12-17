@@ -45,12 +45,17 @@ class JpBSCookieBar {
         
         switch ( $layout )
         {
+            case 4:
+                $template = get_template_directory() . '/cookie-bar/cookie-bar-center.php';
+                if ( ! file_exists( $template ) ) {
+                    $template = BS_JP_PATH . '/template/cookie-bar-center.php';
+                }
+                break;
             case 3:
                 $template = get_template_directory() . '/cookie-bar/cookie-bar-right.php';
                 if ( ! file_exists( $template ) ) {
                     $template = BS_JP_PATH . '/template/cookie-bar-right.php';
                 }
-    
                 break;
             case 2:
                 $template = get_template_directory() . '/cookie-bar/cookie-bar-left.php';

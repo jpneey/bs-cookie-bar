@@ -1,3 +1,4 @@
 #bs-cookie-bar{position:fixed;bottom:0;left:0;padding:30px;box-shadow:1px -5px 15px rgb(0 0 0 / 17%);background:#fff;width:100%;box-sizing:border-box}
 #bs-cookie-bar.bs-left,#bs-cookie-bar.bs-right{width:50%;max-width:500px;min-width:320px}
 #bs-cookie-bar.bs-right{left:auto;right:0}
+#bs-cookie-bar.bs-center{bottom:auto;left:50%;top:50%;transform:translate(-50%,-50%);max-width:600px;box-shadow:1px -5px 15px 9999px rgb(0 0 0 / 57%)}
